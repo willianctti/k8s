@@ -19,10 +19,8 @@ kube-node-api/
 ##  Como Funciona
 
 ### 1. **Aplicação Node.js** (`index.js`)
-```
 
 ### 2. **Containerização** (`Dockerfile`)
-```
 
 ### 3. **Kubernetes Deployment** (`k8s/deployment.yaml`)
 - **2 réplicas** da aplicação para alta disponibilidade
@@ -34,17 +32,9 @@ kube-node-api/
 - **Porta 30080** para acesso de fora do cluster
 - **Distribui tráfego** entre os Pods automaticamente
 
-##  Pré-requisitos
 
-Antes de começar, você precisa ter instalado:
-
-- [Docker](https://docs.docker.com/get-docker/)
-- [Minikube](https://minikube.sigs.k8s.io/docs/start/)
-- [kubectl](https://kubernetes.io/docs/tasks/tools/)
-
-## conceitos Kubernetes Aprendidos
-
-### **Pod**
+## Conceitos Kubernetes Aprendidos 
+**Pod**
 - Contém um ou mais containers
 - É efêmero (pode ser recriado a qualquer momento)
 
@@ -69,4 +59,4 @@ Antes de começar, você precisa ter instalado:
 
 
 **feito com ❤️ para aprender Kubernetes!** 
-# k8s
+
