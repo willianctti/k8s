@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-node-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kube-node-api
+  template:
+    metadata:
+      labels:
+        app: kube-node-api
+    spec:
+      containers:
+      - name: kube-node-api
+        image: kube-node-api
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000
